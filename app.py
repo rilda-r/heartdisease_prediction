@@ -22,7 +22,7 @@ def home():
         # Check for missing or empty inputs
         for field in REQUIRED_FIELDS:
             if field not in request.form or request.form[field].strip() == "":
-                error = "⚠️ Please fill in all the fields before predicting."
+                error = "!!!!Please fill in all the fields before predicting."
                 return render_template("index.html", prediction=None, error=error)
 
         try:
@@ -44,7 +44,7 @@ def home():
             prediction = model.predict(input_data)[0]
 
         except ValueError:
-            error = "❌ Invalid input. Please enter numeric values only."
+            error = "Invalid input. Please enter numeric values only."
 
     return render_template("index.html", prediction=prediction, error=error)
 
