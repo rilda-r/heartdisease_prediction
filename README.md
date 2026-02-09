@@ -31,7 +31,7 @@ The Random Forest Classifier was selected as the final model based on:
 - Hyperparameter tuning (n_estimators, depth)
 - Cross-validation performance
 
-# Features Used
+# Features Used ( from dataset)
 - Age  
 - Sex  
 - Chest Pain Type  
@@ -77,6 +77,7 @@ The Random Forest Classifier was selected as the final model based on:
 
 # Future Improvements
 - Add SHAP-based explainability in UI
+- probabilty score
 - Store patient prediction history
-- Deploy on cloud (Render / AWS / Railway)
+
 
