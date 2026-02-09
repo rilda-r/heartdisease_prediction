@@ -8,43 +8,56 @@
 
 <div class="container">
     <h2>Heart Disease Prediction</h2>
+    <p class="subtitle">Enter patient medical parameters</p>
 
     <form method="POST">
 
-        <label>Age</label>
-        <input type="number" name="age" min="1" max="120">
+        <label>Age (years)</label>
+        <input type="number" name="age" min="1" max="120" placeholder="e.g. 45">
+        <small>Allowed range: 1 – 120</small>
 
-        <label>Sex (1 = Male, 0 = Female)</label>
-        <input type="number" name="sex" min="0" max="1">
+        <label>Sex</label>
+        <input type="number" name="sex" min="0" max="1" placeholder="0 or 1">
+        <small>0 = Female, 1 = Male</small>
 
-        <label>Chest Pain Type (0–3)</label>
-        <input type="number" name="cp" min="0" max="3">
+        <label>Chest Pain Type</label>
+        <input type="number" name="cp" min="0" max="3" placeholder="0 – 3">
+        <small>
+            0: Typical Angina<br>
+            1: Atypical Angina<br>
+            2: Non-anginal Pain<br>
+            3: Asymptomatic
+        </small>
 
-        <label>Resting Blood Pressure</label>
-        <input type="number" name="trestbps">
+        <label>Resting Blood Pressure (mm Hg)</label>
+        <input type="number" name="trestbps" placeholder="e.g. 130">
+        <small>Measured at rest (mm Hg)</small>
 
-        <label>Cholesterol</label>
-        <input type="number" name="chol">
+        <label>Serum Cholesterol (mg/dL)</label>
+        <input type="number" name="chol" placeholder="e.g. 240">
+        <small>Measured in mg/dL</small>
 
-        <label>Fasting Blood Sugar (1 = Yes, 0 = No)</label>
-        <input type="number" name="fbs" min="0" max="1">
+        <label>Fasting Blood Sugar</label>
+        <input type="number" name="fbs" min="0" max="1" placeholder="0 or 1">
+        <small>0 = ≤ 120 mg/dL, 1 = &gt; 120 mg/dL</small>
 
-        <label>Max Heart Rate</label>
-        <input type="number" name="thalach">
+        <label>Maximum Heart Rate Achieved</label>
+        <input type="number" name="thalach" placeholder="e.g. 150">
+        <small>Heart rate during exercise</small>
 
-        <label>Exercise Induced Angina (1 = Yes, 0 = No)</label>
-        <input type="number" name="exang" min="0" max="1">
+        <label>Exercise Induced Angina</label>
+        <input type="number" name="exang" min="0" max="1" placeholder="0 or 1">
+        <small>0 = No, 1 = Yes</small>
 
         <label>Oldpeak</label>
-        <input type="number" step="0.1" name="oldpeak">
+        <input type="number" step="0.1" name="oldpeak" placeholder="e.g. 1.4">
+        <small>ST depression induced by exercise</small>
 
         <button type="submit">Predict</button>
     </form>
 
     {% if error %}
-        <div class="result error">
-            {{ error }}
-        </div>
+        <div class="result error">{{ error }}</div>
     {% endif %}
 
     {% if prediction is not none %}
