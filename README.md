@@ -63,18 +63,6 @@ The Random Forest Classifier was selected as the final model based on:
 4. Open browser
 
 
-# Project Structure
-
-├── app.py
-├── heartdisease_best_model.pkl
-├── requirements.txt
-├── templates/
-│   └── index.html
-├── static/
-│   └── style.css
-└── README.md
-
-
 # Future Improvements
 - Add SHAP-based explainability in UI
 - probabilty score
