@@ -2,7 +2,7 @@ Heart Disease Prediction using Machine Learning
 
 # Overview
 This project predicts the risk of heart disease using machine learning models trained on medical data.
-The best-performing model is deployed as a web application using Flask and provides probability-based risk prediction.
+The best-performing model is deployed as a web application using Flask and provides risk prediction.
 
 # Technologies Used
 - Python
