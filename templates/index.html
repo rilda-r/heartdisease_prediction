@@ -12,46 +12,46 @@
 
     <form method="POST">
 
-        <label>Age (years)</label>
+        <label>Age (1 – 120)</label>
         <input type="number" name="age" min="1" max="120" placeholder="e.g. 45">
-        <small>Allowed range: 1 – 120</small>
+        <br><br>
 
-        <label>Sex</label>
-        <input type="number" name="sex" min="0" max="1" placeholder="0 or 1">
-        <small>0 = Female, 1 = Male</small>
+        <label>Sex (0 or 1)</label>
+        <input type="number" name="sex" min="0" max="1" placeholder="0 = Female, 1 = Male">
+        <br><br>
 
-        <label>Chest Pain Type</label>
+        <label>Chest Pain Type (0 - 3)</label>
         <input type="number" name="cp" min="0" max="3" placeholder="0 – 3">
-        <small>
-            0: Typical Angina<br>
+        <small><br>
+            0: Typical Angina,
             1: Atypical Angina<br>
-            2: Non-anginal Pain<br>
+            2: Non-anginal Pain,
             3: Asymptomatic
-        </small>
+        </small><br>
 
         <label>Resting Blood Pressure (mm Hg)</label>
-        <input type="number" name="trestbps" placeholder="e.g. 130">
-        <small>Measured at rest (mm Hg)</small>
+        <input type="number" name="trestbps" placeholder="e.g. 130, Measured at rest (mm Hg)">
+        <br><br>
 
         <label>Serum Cholesterol (mg/dL)</label>
-        <input type="number" name="chol" placeholder="e.g. 240">
-        <small>Measured in mg/dL</small>
+        <input type="number" name="chol" placeholder="e.g. 240, Measured in mg/dL">
+        <br><br>
 
-        <label>Fasting Blood Sugar</label>
-        <input type="number" name="fbs" min="0" max="1" placeholder="0 or 1">
-        <small>0 = ≤ 120 mg/dL, 1 = &gt; 120 mg/dL</small>
+        <label>Fasting Blood Sugar (0 or 1)</label>
+        <input type="number" name="fbs" min="0" max="1" placeholder="0 if ≤ 120 mg/dL,  1 if >= 120 mg/dL">
+        <br><br>
 
         <label>Maximum Heart Rate Achieved</label>
-        <input type="number" name="thalach" placeholder="e.g. 150">
-        <small>Heart rate during exercise</small>
+        <input type="number" name="thalach" placeholder="e.g. 150, Heart rate during exercise">
+        <br><br>
 
-        <label>Exercise Induced Angina</label>
-        <input type="number" name="exang" min="0" max="1" placeholder="0 or 1">
-        <small>0 = No, 1 = Yes</small>
+        <label>Exercise Induced Angina ( 0 or 1)</label>
+        <input type="number" name="exang" min="0" max="1" placeholder="0-NO, 1-YES">
+        <BR><BR>
 
         <label>Oldpeak</label>
         <input type="number" step="0.1" name="oldpeak" placeholder="e.g. 1.4">
-        <small>ST depression induced by exercise</small>
+        <small><br>ST depression induced by exercise</small>
 
         <button type="submit">Predict</button>
     </form>

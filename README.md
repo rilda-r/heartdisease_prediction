@@ -77,6 +77,7 @@ The Random Forest Classifier was selected as the final model based on:
 
 # Future Improvements
 - Add SHAP-based explainability in UI
+- probability percentage
 - Store patient prediction history
 - Deploy on cloud (Render / AWS / Railway)
 
