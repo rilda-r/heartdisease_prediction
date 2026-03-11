@@ -65,11 +65,7 @@ The Random Forest Classifier was selected as the final model based on:
 
 # Future Improvements
 - Add SHAP-based explainability in UI
-<<<<<<< HEAD
-- probability percentage
-=======
 - probabilty score
->>>>>>> cf38985775289485c788c3034f89b7c9dbc83199
 - Store patient prediction history
 
 
