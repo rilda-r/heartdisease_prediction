@@ -2,7 +2,7 @@ Heart Disease Prediction using Machine Learning
 
 # Overview
 This project predicts the risk of heart disease using machine learning models trained on medical data.
-The best-performing model is deployed as a web application using Flask and provides probability-based risk prediction.
+The best-performing model is deployed as a web application using Flask and provides risk prediction.
 
 # Technologies Used
 - Python
@@ -31,7 +31,7 @@ The Random Forest Classifier was selected as the final model based on:
 - Hyperparameter tuning (n_estimators, depth)
 - Cross-validation performance
 
-# Features Used
+# Features Used ( from dataset)
 - Age  
 - Sex  
 - Chest Pain Type  
@@ -63,21 +63,13 @@ The Random Forest Classifier was selected as the final model based on:
 4. Open browser
 
 
-# Project Structure
-
-├── app.py
-├── heartdisease_best_model.pkl
-├── requirements.txt
-├── templates/
-│   └── index.html
-├── static/
-│   └── style.css
-└── README.md
-
-
 # Future Improvements
 - Add SHAP-based explainability in UI
+<<<<<<< HEAD
 - probability percentage
+=======
+- probabilty score
+>>>>>>> cf38985775289485c788c3034f89b7c9dbc83199
 - Store patient prediction history
-- Deploy on cloud (Render / AWS / Railway)
+
 
