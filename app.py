@@ -19,7 +19,6 @@ def home():
 
     if request.method == "POST":
 
-<<<<<<< HEAD
         # Check for empty fields FIRST
         for field in REQUIRED_FIELDS:
             if field not in request.form or request.form[field].strip() == "":
@@ -28,16 +27,6 @@ def home():
 
         try:
             # Convert inputs ONLY after validation
-=======
-        # 1️) Check for empty fields FIRST
-        for field in REQUIRED_FIELDS:
-            if field not in request.form or request.form[field].strip() == "":
-                error = "!! Please fill in all fields before predicting."
-                return render_template("index.html", prediction=None, error=error)
-
-        try:
-            # 2️) Convert inputs ONLY after validation
->>>>>>> cf38985775289485c788c3034f89b7c9dbc83199
             input_data = np.array([[
                 float(request.form["age"]),
                 float(request.form["sex"]),
@@ -53,13 +42,8 @@ def home():
             prediction = model.predict(input_data)[0]
 
         except ValueError:
-<<<<<<< HEAD
             #  Only catches non-numeric inputs
             error = "! Please enter valid numeric values."
-=======
-            # 3️) Only catches non-numeric inputs
-            error = !! Please enter valid numeric values."
->>>>>>> cf38985775289485c788c3034f89b7c9dbc83199
 
     return render_template("index.html", prediction=prediction, error=error)
 
